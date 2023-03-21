@@ -1,0 +1,15 @@
+{
+  "mean_plddt": 73.93340301513672,
+  "recycles": 3,
+  "tol": 2.9391815662384033,
+  "model": "4",
+  "type": "monomer_ptm",
+  "seed": "0",
+  "rmsd_to_input": 12.372577667236328,
+  "mean_pae_interaction": NaN,
+  "mean_pae_intra_chain_A": 11.132121086120605,
+  "mean_pae_intra_chain": 11.132121086120605,
+  "mean_pae": 11.294394493103027,
+  "pTMscore": 0.3339880108833313,
+  "elapsed_time": 4.711168527603149
+}

@@ -1,0 +1,1 @@
+/software/rosetta/latest/bin/rosetta_scripts.hdf5.linuxgccrelease -s /mnt/home/norn/capsid/capsid_publication/computation_pipeline/test/input/chain_A/build_0.2413_1.0_0.3010_24_2.31_0.350232.pdb -parser:protocol design.xml @/mnt/home/norn/capsid/capsid_publication/computation_pipeline/protocols/flags -out:prefix rainity_
