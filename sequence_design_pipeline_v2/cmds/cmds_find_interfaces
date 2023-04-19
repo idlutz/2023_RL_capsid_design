@@ -1,0 +1,1 @@
+cd scripts_protocols/find_score_interfaces; apptainer run protein-backbone-MCTS.sif find_interface_types.py 

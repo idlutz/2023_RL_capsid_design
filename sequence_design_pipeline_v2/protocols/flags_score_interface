@@ -1,0 +1,8 @@
+-beta_nov16 
+-ex1 
+-ex2 
+-holes:dalphaball /home/bcov/dev_rosetta/main/source/external/DAlpahBall/DAlphaBall.gcc 
+-script_vars runpsipred_single=RUNPSIPRED_SINGLE 
+#-indexed_structure_store:fragment_store /home/bcov/sc/scaffold_comparison/data/ss_grouped_vall_all.h5 
+-overwrite 
+
