@@ -1,9 +1,0 @@
--database /software/rosetta/latest/main/database 
--beta_nov16 
--corrections:beta_nov16 
--holes:dalphaball /home/bcov/dev_rosetta/main/source/external/DAlpahBall/DAlphaBall.gcc 
--nstruct 1 
--overwrite
--ex1
--ex2
--run:preserve_header 

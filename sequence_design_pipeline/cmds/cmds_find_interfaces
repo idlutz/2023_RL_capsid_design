@@ -1,1 +1,0 @@
-cd scripts_protocols/find_score_interfaces; apptainer run /software/containers/users/ilutz/rl.sif find_interface_types.py 
