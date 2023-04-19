@@ -1,0 +1,100 @@
+##############################################################################################################
+#
+# Rosetta crash log. Please submit the contents of this file to http://crash.rosettacommons.org/
+# or use the script Rosetta/main/source/scripts/python/public/report_crashes.py
+#
+
+[START_CRASH_REPORT]
+[ROSETTA_VERSION]: 2022.49+HEAD.201d7639f91
+[COMMIT_DATE]: 2022-12-07T16:15:33
+[APPLICATION]: /software/rosetta/latest/bin/rosetta_scripts.hdf5.linuxgccrelease
+[MODE]: Release
+[EXTRAS]: hdf5 
+[OS]: GNU/Linux
+[COMPILER]: GCC version "11.2.0"
+[STDLIB]: libstdc++ version 20220324
+[START_OPTIONS]
+ -in:path:database=/software/rosetta/latest/main/database/ -in:file:s=test/input/chain_A/build_0.2_1.0_0.3489_21_2.40_0.005533.pdb -out:overwrite -out:nstruct=1 -out:prefix=rainity_ -parser:protocol=design.xml -packing:ex1 -packing:ex2 -corrections:beta_nov16 -holes:dalphaball=/home/bcov/dev_rosetta/main/source/external/DAlpahBall/DAlphaBall.gcc
+
+[END_OPTIONS]
+
+[START_BACKTRACE]: RAW_LIBC
+/mnt/net/software/rosetta/versions/v2022.49-dev61970/main/source/build/src/release/linux/5.15/64/x86/gcc/11/hdf5/libutility.so(backtrace_string[abi:cxx11](int)+0x5a) [0x7f8286b3222a]
+/mnt/net/software/rosetta/versions/v2022.49-dev61970/main/source/build/src/release/linux/5.15/64/x86/gcc/11/hdf5/libutility.so(utility::excn::Exception::Exception(char const*, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0xe0) [0x7f8286b70280]
+/mnt/net/software/rosetta/versions/v2022.49-dev61970/main/source/build/src/release/linux/5.15/64/x86/gcc/11/hdf5/libutility.so(utility::UtilityExitException::UtilityExitException(char const*, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x113) [0x7f8286b37463]
+/mnt/net/software/rosetta/versions/v2022.49-dev61970/main/source/build/src/release/linux/5.15/64/x86/gcc/11/hdf5/libutility.so(utility::exit(char const*, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int)+0x3b) [0x7f8286b370ab]
+/mnt/net/software/rosetta/versions/v2022.49-dev61970/main/source/build/src/release/linux/5.15/64/x86/gcc/11/hdf5/libcore.6.so(core::import_pose::pose_from_file(core::pose::Pose&, core::chemical::ResidueTypeSet const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, core::import_pose::ImportPoseOptions const&, bool, core::import_pose::FileType)+0x598) [0x7f827f69fc78]
+/mnt/net/software/rosetta/versions/v2022.49-dev61970/main/source/build/src/release/linux/5.15/64/x86/gcc/11/hdf5/libcore.6.so(core::import_pose::pose_from_file(core::pose::Pose&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, core::import_pose::ImportPoseOptions const&, bool, core::import_pose::FileType)+0x11d) [0x7f827f6a4b7d]
+/mnt/net/software/rosetta/versions/v2022.49-dev61970/main/source/build/src/release/linux/5.15/64/x86/gcc/11/hdf5/libcore.6.so(core::import_pose::pose_from_file(core::pose::Pose&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, core::import_pose::FileType)+0x50) [0x7f827f6a4d70]
+/mnt/net/software/rosetta/versions/v2022.49-dev61970/main/source/build/src/release/linux/5.15/64/x86/gcc/11/hdf5/libprotocols.1.so(protocols::jd2::PDBJobInputter::pose_from_job(core::pose::Pose&, std::shared_ptr<protocols::jd2::Job>)+0x5ab) [0x7f8287966e0b]
+/mnt/net/software/rosetta/versions/v2022.49-dev61970/main/source/build/src/release/linux/5.15/64/x86/gcc/11/hdf5/libprotocols.1.so(protocols::jd2::JobDistributor::run_one_job(std::shared_ptr<protocols::moves::Mover>&, long, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, unsigned long&, unsigned long&, bool)+0x653) [0x7f828792fce3]
+/mnt/net/software/rosetta/versions/v2022.49-dev61970/main/source/build/src/release/linux/5.15/64/x86/gcc/11/hdf5/libprotocols.1.so(protocols::jd2::JobDistributor::go_main(std::shared_ptr<protocols::moves::Mover>)+0x238) [0x7f82879324f8]
+/mnt/net/software/rosetta/versions/v2022.49-dev61970/main/source/build/src/release/linux/5.15/64/x86/gcc/11/hdf5/libprotocols.1.so(protocols::jd2::FileSystemJobDistributor::go(std::shared_ptr<protocols::moves::Mover>)+0x59) [0x7f828791b0b9]
+/software/rosetta/latest/bin/rosetta_scripts.hdf5.linuxgccrelease(+0x4aa5) [0x560c9b886aa5]
+/lib/x86_64-linux-gnu/libc.so.6(+0x29d90) [0x7f8286526d90]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x80) [0x7f8286526e40]
+/software/rosetta/latest/bin/rosetta_scripts.hdf5.linuxgccrelease(+0x4d25) [0x560c9b886d25]
+
+[END_BACKTRACE]
+
+[FILE]: src/core/import_pose/import_pose.cc
+[LINE]: 361
+[START_MESSAGE]
+[ ERROR ] UtilityExitException
+ERROR: Cannot open file "test/input/chain_A/build_0.2_1.0_0.3489_21_2.40_0.005533.pdb"
+
+
+
+[END_MESSAGE]
+[END_CRASH_REPORT]
+
+##############################################################################################################
+#
+# Rosetta crash log. Please submit the contents of this file to http://crash.rosettacommons.org/
+# or use the script Rosetta/main/source/scripts/python/public/report_crashes.py
+#
+
+[START_CRASH_REPORT]
+[ROSETTA_VERSION]: 2022.49+HEAD.201d7639f91
+[COMMIT_DATE]: 2022-12-07T16:15:33
+[APPLICATION]: /software/rosetta/latest/bin/rosetta_scripts.hdf5.linuxgccrelease
+[MODE]: Release
+[EXTRAS]: hdf5 
+[OS]: GNU/Linux
+[COMPILER]: GCC version "11.2.0"
+[STDLIB]: libstdc++ version 20220324
+[START_OPTIONS]
+ -in:path:database=/software/rosetta/latest/main/database/ -in:file:s=test/input/chain_A/build_0.2_1.0_0.3489_21_2.40_0.005533.pdb -out:overwrite -out:nstruct=1 -out:prefix=rainity_ -parser:protocol=design.xml -packing:ex1 -packing:ex2 -corrections:beta_nov16 -holes:dalphaball=/home/bcov/dev_rosetta/main/source/external/DAlpahBall/DAlphaBall.gcc
+
+[END_OPTIONS]
+
+[START_BACKTRACE]: RAW_LIBC
+/mnt/net/software/rosetta/versions/v2022.49-dev61970/main/source/build/src/release/linux/5.15/64/x86/gcc/11/hdf5/libutility.so(backtrace_string[abi:cxx11](int)+0x5a) [0x7fc9e8bfe22a]
+/mnt/net/software/rosetta/versions/v2022.49-dev61970/main/source/build/src/release/linux/5.15/64/x86/gcc/11/hdf5/libutility.so(utility::excn::Exception::Exception(char const*, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0xe0) [0x7fc9e8c3c280]
+/mnt/net/software/rosetta/versions/v2022.49-dev61970/main/source/build/src/release/linux/5.15/64/x86/gcc/11/hdf5/libutility.so(utility::UtilityExitException::UtilityExitException(char const*, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x113) [0x7fc9e8c03463]
+/mnt/net/software/rosetta/versions/v2022.49-dev61970/main/source/build/src/release/linux/5.15/64/x86/gcc/11/hdf5/libutility.so(utility::exit(char const*, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int)+0x3b) [0x7fc9e8c030ab]
+/mnt/net/software/rosetta/versions/v2022.49-dev61970/main/source/build/src/release/linux/5.15/64/x86/gcc/11/hdf5/libcore.6.so(core::import_pose::pose_from_file(core::pose::Pose&, core::chemical::ResidueTypeSet const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, core::import_pose::ImportPoseOptions const&, bool, core::import_pose::FileType)+0x598) [0x7fc9e176bc78]
+/mnt/net/software/rosetta/versions/v2022.49-dev61970/main/source/build/src/release/linux/5.15/64/x86/gcc/11/hdf5/libcore.6.so(core::import_pose::pose_from_file(core::pose::Pose&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, core::import_pose::ImportPoseOptions const&, bool, core::import_pose::FileType)+0x11d) [0x7fc9e1770b7d]
+/mnt/net/software/rosetta/versions/v2022.49-dev61970/main/source/build/src/release/linux/5.15/64/x86/gcc/11/hdf5/libcore.6.so(core::import_pose::pose_from_file(core::pose::Pose&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, core::import_pose::FileType)+0x50) [0x7fc9e1770d70]
+/mnt/net/software/rosetta/versions/v2022.49-dev61970/main/source/build/src/release/linux/5.15/64/x86/gcc/11/hdf5/libprotocols.1.so(protocols::jd2::PDBJobInputter::pose_from_job(core::pose::Pose&, std::shared_ptr<protocols::jd2::Job>)+0x5ab) [0x7fc9e9a32e0b]
+/mnt/net/software/rosetta/versions/v2022.49-dev61970/main/source/build/src/release/linux/5.15/64/x86/gcc/11/hdf5/libprotocols.1.so(protocols::jd2::JobDistributor::run_one_job(std::shared_ptr<protocols::moves::Mover>&, long, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, unsigned long&, unsigned long&, bool)+0x653) [0x7fc9e99fbce3]
+/mnt/net/software/rosetta/versions/v2022.49-dev61970/main/source/build/src/release/linux/5.15/64/x86/gcc/11/hdf5/libprotocols.1.so(protocols::jd2::JobDistributor::go_main(std::shared_ptr<protocols::moves::Mover>)+0x238) [0x7fc9e99fe4f8]
+/mnt/net/software/rosetta/versions/v2022.49-dev61970/main/source/build/src/release/linux/5.15/64/x86/gcc/11/hdf5/libprotocols.1.so(protocols::jd2::FileSystemJobDistributor::go(std::shared_ptr<protocols::moves::Mover>)+0x59) [0x7fc9e99e70b9]
+/software/rosetta/latest/bin/rosetta_scripts.hdf5.linuxgccrelease(+0x4aa5) [0x559e6162daa5]
+/lib/x86_64-linux-gnu/libc.so.6(+0x29d90) [0x7fc9e85f2d90]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x80) [0x7fc9e85f2e40]
+/software/rosetta/latest/bin/rosetta_scripts.hdf5.linuxgccrelease(+0x4d25) [0x559e6162dd25]
+
+[END_BACKTRACE]
+
+[FILE]: src/core/import_pose/import_pose.cc
+[LINE]: 361
+[START_MESSAGE]
+[ ERROR ] UtilityExitException
+ERROR: Cannot open file "test/input/chain_A/build_0.2_1.0_0.3489_21_2.40_0.005533.pdb"
+
+
+
+[END_MESSAGE]
+[END_CRASH_REPORT]
+

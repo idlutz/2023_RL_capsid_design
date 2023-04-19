@@ -1,0 +1,1 @@
+/software/rosetta/latest/bin/rosetta_scripts.hdf5.linuxgccrelease -s /home/swang523/RLcage/manuscript/computation_pipeline/test/monomers_fordesign/aligned_DM_chA/rainity_build_0.2222_1.0_0.5092_24_2.15_0.615602_0001_DM_aligned.pdb -parser:protocol design_cage.xml @flags_cage_design#2 -out:prefix cage_
